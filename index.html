@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muse Shelf | Music Picks</title>
+    <meta
+      name="description"
+      content="Apple Music inspired music recommendation site."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="#" aria-label="Muse Shelf home">
+        <span class="brand-mark"></span>
+        <span>Muse Shelf</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#featured">For You</a>
+        <a href="#albums">Albums</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#share">Share</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="featured">
+        <img
+          class="hero-bg"
+          src="assets/hero-stage.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="hero-copy">
+          <p class="eyebrow">Curated for weekend listening</p>
+          <h1>この1枚を、あの人にすすめたい。</h1>
+          <p class="lead">
+            気分、時間帯、相手との距離感まで含めて選ぶ音楽紹介サイト。
+            好きな曲をただ並べるのではなく、聴いてほしい理由まで届けます。
+          </p>
+          <div class="hero-actions" aria-label="Featured playlist actions">
+            <a class="button primary" href="#tracks">今すぐ聴く</a>
+            <a class="button secondary" href="#albums">おすすめを見る</a>
+          </div>
+        </div>
+
+        <aside class="now-playing" aria-label="Now playing recommendation">
+          <img
+            class="cover-thumb"
+            src="assets/afterglow-letters.png"
+            alt="Afterglow Lettersのカバー画像"
+          />
+          <div class="player-panel">
+            <div>
+              <p class="mini-label">Featured Pick</p>
+              <h2>Afterglow Letters</h2>
+              <p>Minato Blue</p>
+            </div>
+            <div class="progress" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="player-controls" aria-label="Player controls">
+              <button type="button" aria-label="Previous track">&lsaquo;</button>
+              <button class="play" type="button" aria-label="Play">&#9654;</button>
+              <button type="button" aria-label="Next track">&rsaquo;</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="albums">
+        <div class="section-heading">
+          <p class="eyebrow">Recommended Albums</p>
+          <h2>相手の気分に合わせて選べる4枚。</h2>
+        </div>
+
+        <div class="album-grid">
+          <article class="album-card">
+            <img
+              src="assets/neon-harbor.png"
+              alt="Neon Harborのカバー画像"
+            />
+            <div class="album-info">
+              <p class="tag">夜の散歩に</p>
+              <h3>Neon Harbor</h3>
+              <p>Riku Nami</p>
+            </div>
+          </article>
+
+          <article class="album-card">
+            <img
+              src="assets/soft-static.png"
+              alt="Soft Staticのカバー画像"
+            />
+            <div class="album-info">
+              <p class="tag">静かな朝に</p>
+              <h3>Soft Static</h3>
+              <p>Lake Room</p>
+            </div>
+          </article>
+
+          <article class="album-card">
+            <img
+              src="assets/bright-errors.png"
+              alt="Bright Errorsのカバー画像"
+            />
+            <div class="album-info">
+              <p class="tag">背中を押したい時に</p>
+              <h3>Bright Errors</h3>
+              <p>Somewhere Kids</p>
+            </div>
+          </article>
+
+          <article class="album-card">
+            <img
+              src="assets/room-tone.png"
+              alt="Room Toneのカバー画像"
+            />
+            <div class="album-info">
+              <p class="tag">作業に集中したい時に</p>
+              <h3>Room Tone</h3>
+              <p>Haru Index</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mood-section" aria-label="Mood stations">
+        <div class="section-heading compact">
+          <p class="eyebrow">Mood Stations</p>
+          <h2>言葉にしにくい気分から探す。</h2>
+        </div>
+        <div class="mood-grid">
+          <a class="mood-card coral" href="#tracks">
+            <span>01</span>
+            <strong>深夜の帰り道</strong>
+          </a>
+          <a class="mood-card blue" href="#tracks">
+            <span>02</span>
+            <strong>雨の日の部屋</strong>
+          </a>
+          <a class="mood-card green" href="#tracks">
+            <span>03</span>
+            <strong>少し元気を出す</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="section track-section" id="tracks">
+        <div class="section-heading">
+          <p class="eyebrow">Starter Playlist</p>
+          <h2>まず渡したい5曲。</h2>
+        </div>
+
+        <div class="track-list">
+          <article class="track-row">
+            <button type="button" aria-label="Play Afterglow Letters">&#9654;</button>
+            <span class="track-number">1</span>
+            <img
+              src="assets/afterglow-letters.png"
+              alt="Afterglow Lettersのカバー画像"
+            />
+            <div>
+              <h3>Afterglow Letters</h3>
+              <p>Minato Blue</p>
+            </div>
+            <p class="track-note">帰り道に一人で聴いてほしい曲。</p>
+          </article>
+
+          <article class="track-row">
+            <button type="button" aria-label="Play Slow Bloom">&#9654;</button>
+            <span class="track-number">2</span>
+            <img
+              src="assets/soft-static.png"
+              alt="Slow Bloomのカバー画像"
+            />
+            <div>
+              <h3>Slow Bloom</h3>
+              <p>Lake Room</p>
+            </div>
+            <p class="track-note">焦っている人に、呼吸の余白を渡す。</p>
+          </article>
+
+          <article class="track-row">
+            <button type="button" aria-label="Play Tiny Sparks">&#9654;</button>
+            <span class="track-number">3</span>
+            <img
+              src="assets/bright-errors.png"
+              alt="Tiny Sparksのカバー画像"
+            />
+            <div>
+              <h3>Tiny Sparks</h3>
+              <p>Somewhere Kids</p>
+            </div>
+            <p class="track-note">新しいことを始める前日に。</p>
+          </article>
+
+          <article class="track-row">
+            <button type="button" aria-label="Play Window Seat">&#9654;</button>
+            <span class="track-number">4</span>
+            <img
+              src="assets/room-tone.png"
+              alt="Window Seatのカバー画像"
+            />
+            <div>
+              <h3>Window Seat</h3>
+              <p>Haru Index</p>
+            </div>
+            <p class="track-note">言葉が多すぎる日に、音だけで寄り添う。</p>
+          </article>
+
+          <article class="track-row">
+            <button type="button" aria-label="Play Good Signal">&#9654;</button>
+            <span class="track-number">5</span>
+            <img
+              src="assets/neon-harbor.png"
+              alt="Good Signalのカバー画像"
+            />
+            <div>
+              <h3>Good Signal</h3>
+              <p>Riku Nami</p>
+            </div>
+            <p class="track-note">また会いたくなる明るさで締める。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="share-panel" id="share">
+        <div>
+          <p class="eyebrow">Share the feeling</p>
+          <h2>曲名より先に、すすめたい理由を届ける。</h2>
+        </div>
+        <a class="button primary" href="mailto:hello@example.com">プレイリストを送る</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Muse Shelf. Built for music recommendations.</p>
+    </footer>
+  </body>
+</html>
